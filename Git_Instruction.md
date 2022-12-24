@@ -205,12 +205,12 @@ git init
 git add README.md
 git commit -m "first commit"
 git branch -M main
-git remote add origin https://github.com/RustamAY/ueu11.git
+git remote add origin https://github.com/(название вашего аккаунта)/(название вашего репозитори).git
 git push -u origin main
 ```
 2. Отправить существующий репозиторий через терминал.
 ```
-git remote add origin https://github.com/RustamAY/ueu11.git
+git remote add origin https://github.com/(название вашего аккаунта)/(название вашего репозитори).git
 git branch -M main
 git push -u origin main
 ```
@@ -218,8 +218,36 @@ git push -u origin main
 
 Для нас достаточно первые два метода которые разберем ниже.
 
-
-
+## Создание нового репозитория через терминал
+1. Создаем паку у себя на компютере, который мы инициализируем как новый репозиторий.
+2. Создаем файл README.md с помощью команды:
+```
+echo "# (название вашего репозитория на англ)" >> README.md
+```
+3. Инициализируем репозиторий:
+```
+git init
+```
+3. Добавляем файл README.md в репозиторий для отслеживания:
+```
+git add README.md
+```
+4. Делаем первый коммит:
+```
+git commit -m "first commit"
+```
+5. Переименовываем назмание ветки что бы и в локальной и в удаленном репозитории они были одинаковы:
+```
+git branch -M main
+```
+6. Соединяем локальный и удалёный репозиторий:
+```
+git remote add origin https://github.com/(название вашего аккаунта)/(название вашего репозитори).git
+```
+7. Отправляем все изменения которые мы сделали в локальном репозитории в удалёный:
+```
+git push -u origin main
+```
 
 Добавить удалённый репозиторий к проекту:
 ```
